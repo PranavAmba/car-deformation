@@ -17,11 +17,12 @@ function setup() {
   console.log(speed);
   console.log(weight);
 
-  stopWhenCollided(car,wall);
+  
 }
 
 function draw() {
-  background(255,25,25);  
+  background(255,25,25);
+   stopWhenCollided(car,wall);
   drawSprites();
 }
 function stopWhenCollided(object1,object2){
